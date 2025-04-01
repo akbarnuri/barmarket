@@ -6,19 +6,32 @@ import (
 )
 
 func main() {
-	var correctPassword string = "barmarket"
+	var correctUsername string = "barmarket"
+	var correctPassword string = "allien"
 	var input string
 
-	for input != correctPassword {
-		fmt.Print("Enter password: ")
+	for input != correctUsername {
+		fmt.Print("Enter Username: ")
 		fmt.Scanln(&input)
 
-		if input != correctPassword {
-			fmt.Println("Incorrect password")
+		if input != correctUsername {
+			fmt.Println("Incorrect Username")
 		}
 	}
 
-	fmt.Println("Correct password")
+	for input != correctPassword {
+		fmt.Print("Enter Password: ")
+		fmt.Scanln(&input)
+
+		if input != correctPassword {
+			fmt.Println("Incorrect Password")
+		}
+
+	}
+
+	fmt.Println("Login Success")
+	fmt.Println("=============================")
+	fmt.Println("Welcome to Bar Market")
 	for {
 		var input int
 		fmt.Println("Menu,masakan apa yang ingin anda pesan?")
