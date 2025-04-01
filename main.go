@@ -8,6 +8,9 @@ import (
 func main() {
 	var correctUsername string = "barmarket"
 	var correctPassword string = "allien"
+	fmt.Println("=============================")
+	fmt.Println("Login")
+	fmt.Println("=============================")
 	var input string
 
 	for input != correctUsername {
@@ -15,7 +18,7 @@ func main() {
 		fmt.Scanln(&input)
 
 		if input != correctUsername {
-			fmt.Println("Incorrect Username")
+			fmt.Println("Username not found")
 		}
 	}
 
@@ -24,7 +27,7 @@ func main() {
 		fmt.Scanln(&input)
 
 		if input != correctPassword {
-			fmt.Println("Incorrect Password")
+			fmt.Println("Password not found")
 		}
 
 	}
